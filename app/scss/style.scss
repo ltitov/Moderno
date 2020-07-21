@@ -458,15 +458,16 @@
   }
 }
 
-.tutorial__item { 
+.tutorial__item {
   &-images {
-min-height: 270px;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 
   }
+
   &-title {
     background-color: #fff;
     font-size: 24px;
@@ -478,7 +479,193 @@ background-size: cover;
   }
 }
 
-
-
-
 // end tutorial
+// start footer
+.footer {
+  background-color: $bg;
+
+  &__inner {
+    padding: 100px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+.footer__copy {
+  padding: 25px 0;
+  border-top: 1px solid #424d53;
+  ;
+}
+
+.footer__copy-text {
+  text-align: center;
+  font-size: 15px;
+  color: #919699;
+  line-height: 36px;
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+
+  &-menu {
+    max-width: 220px;
+  }
+
+  &-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+
+    }
+
+  }
+
+  &-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__info {
+  margin-top: 18px;
+  @include f500;
+  color: #ffffff;
+  padding-left: 30px;
+  position: relative;
+
+  &::before {
+    content: '\f041';
+    position: absolute;
+    left: 0;
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;
+
+  }
+}
+
+.footer__info-phone {
+  &::before {
+    content: '\f095';
+  }
+}
+
+.footer__col-list {
+  a {
+    margin-bottom: 15px;
+    padding-left: 22px;
+    position: relative;
+    color: #b7c3c8;
+
+    &::before {
+      content: '\f105';
+      position: absolute;
+      color: $green;
+      left: 0;
+      font-size: 18px;
+      font-family: 'icomoon';
+
+    }
+  }
+}
+
+.footer__social-link {
+  margin-bottom: 33px;
+
+  li {
+    display: inline-block;
+
+    &+li {
+      margin-left: 7px;
+    }
+  }
+
+  a {
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/content/css_sprites.png);
+
+    &+a {
+      margin-left: 7px;
+    }
+  }
+}
+
+
+.link-twitter {
+  background-position: -28px -0;
+}
+
+.link-youtube {
+  background-position: -56px 0;
+}
+
+.link-pinterest {
+  background-position: -84px 0;
+}
+
+.link-linkedin {
+  background-position: -112px 0;
+}
+
+.footer__form-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer__form {
+  position: relative;
+  input{
+    border: none;
+    background-color: #2f3c43;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff; 
+    font-size: 14px;
+    padding-left: 13px;
+    padding-right: 50px;
+    &::placeholder{
+      color: #697378; 
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    border: none;
+    height: 40px;
+    width: 43px;
+    cursor: pointer;
+    &::before{
+      content: '\f124';
+      position: absolute;
+      font-family: 'icomoon'; 
+      color: #ffffff;
+      font-size: 20px;
+      top: 11px;
+      left: 13px;
+
+
+    }
+  }
+}
+
+// end footer 
