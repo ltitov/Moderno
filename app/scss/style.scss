@@ -82,13 +82,13 @@
     margin-bottom: 25px;
     font-size: 48px;
     line-height: 72px;
-    font-weight: 700;
+    @include f700;
   }
 
   &-text {
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     line-height: 30px;
   }
 
@@ -108,11 +108,11 @@
       border-radius: 4px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
 
       &::placeholder {
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
 
@@ -187,7 +187,7 @@
     align-items: center;
     padding: 10px 30px;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;
   }
 
@@ -212,7 +212,7 @@
   &-price {
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
   }
 
   &-info {
@@ -241,7 +241,7 @@
 
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
 
@@ -274,10 +274,7 @@
       color: #ffffff;
     }
   }
-
 }
-
-
 
 // end products 
 
@@ -312,10 +309,135 @@
         outline: transparent;
       }
     }
-
   }
 }
 
 
 
 // end product slider
+
+// start adventages
+.adventages {
+  background-color: $bg;
+  padding: 110px 0;
+}
+
+.adventages__title {
+  color: #fff;
+}
+
+.adventages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0px 15px;
+
+  &:hover {
+    .adventages__item-images {
+      background-color: $green;
+    }
+
+    .adventages__item-title {
+      color: $green;
+    }
+
+    .adventages__item-images {
+      g {
+        fill: #fff;
+      }
+    }
+  }
+
+  &-images {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all 0.5s;
+  }
+
+  &-title {
+
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #fff;
+    @include f500;
+    transition: all 0.5s;
+
+  }
+
+  &-text {}
+}
+
+
+.icosvg-1 {
+  svg {
+    width: 86px;
+  }
+}
+
+.icosvg-2 {
+  svg {
+    width: 86px;
+  }
+}
+
+.icosvg-3 {
+  svg {
+    width: 86px;
+  }
+}
+
+// end adventages
+
+// start author
+.author {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+
+  &__title {
+    margin-right: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+    max-width: 265px;
+
+    span {
+      @include f700;
+    }
+  }
+
+  &__link {
+    padding: 14px 40px;
+    line-height: 36px;
+    font-size: 18px;
+    background-color: #fff;
+  }
+}
+
+// end author 
