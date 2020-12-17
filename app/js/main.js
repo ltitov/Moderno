@@ -22,5 +22,19 @@ $(function () {
     prefix: "$"
   });
 
+  $('.product-page__filter-btn--list').on('click', function () {
+    $('.product__item').addClass('list');
+    $('.product-page__filter-btn--list').addClass('active');
+    $('.product-page__filter-btn--large').removeClass('active');
+  });
+
+  $('.product-page__filter-btn--large').on('click', function () {
+    $('.product__item').removeClass('list');
+    $('.product-page__filter-btn--large').addClass('active');
+    $('.product-page__filter-btn--list').removeClass('active');
+  });
+
+
+
   var mixer = mixitup('.products__inner-box');
 });
