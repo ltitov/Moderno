@@ -209,7 +209,9 @@
 }
 
 .user__box,
-.basket__box {
+.basket__box,
+.notification__box,
+.message__box {
   position: relative;
   height: 90px;
   margin-top: 40px;
@@ -234,26 +236,49 @@
   overflow: hidden;
 }
 
-.basket__box {
+.basket__box,
+.notification__box,
+.message__box {
   margin-top: 54px;
   margin-left: 15px;
 
   &:hover {
+    .header__circle::before {
+      color: $bg;
+    }
+
     .circle__menu {
-      overflow: auto;
+      overflow: hidden;
       height: auto;
+    }
+
+    .circle__item {
+      padding: 23px 23px;
+      border-width: 1px;
     }
   }
 }
 
 .circle__item {
   background-color: #fff;
-  border: 1px solid #e0e0e0;
+  border: 0px solid #e0e0e0;
+  border-left-width: 1px;
+  border-right-width: 1px;
   border-top: none;
-  padding: 23px;
+  padding: 0 23px;
   display: flex;
   align-items: center;
   width: 270px;
+  position: relative;
+  transition: all 0.3s;
+
+  &:before {
+    position: absolute;
+    top: 27px;
+    right: 28px;
+    color: #b0b3c5;
+    font-size: 16px;
+  }
 }
 
 .circle__images {
@@ -274,6 +299,11 @@
   @include f500;
   color: #000;
   font-size: 16px;
+}
+
+.circle__info-date {
+  color: #707070;
+  font-size: 10px;
 }
 
 .basket__summ {
@@ -312,6 +342,24 @@
     margin-left: 6px;
     background-color: $red;
   }
+}
+
+.notification__menu,
+.message__menu {
+  .circle__images {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .circle__info {
+    line-height: 18px;
+  }
+}
+
+.fa--color::before {
+  color: $orange;
 }
 
 
