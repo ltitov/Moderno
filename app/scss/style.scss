@@ -4,6 +4,9 @@
 @import 'fontawesome';
 
 // start header
+.header__top {
+  background-color: #fff;
+}
 
 .header__top-inner {
   display: flex;
@@ -131,13 +134,15 @@
 }
 
 .basket {
+  margin-right: 20px;
+
   span {
     background-color: $green;
   }
 }
 
 .user {
-  margin-left: 20px;
+  // margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -195,6 +200,7 @@
   height: 0px;
   overflow: hidden;
   top: 70px;
+  z-index: 1;
 
   a {
     font-size: 12px;
@@ -206,6 +212,7 @@
 .circle__menu {
   position: absolute;
   top: 69px;
+  z-index: 1;
 }
 
 .user__box,
@@ -228,11 +235,12 @@
 }
 
 .circle__menu {
-  top: 62px;
+  top: 63px;
   right: 0;
   height: 0;
-  border-top: 1px solid #e0e0e0;
+  border-top: 0px solid #e0e0e0;
   transition: all 0.3s;
+  transition: border-width 0s;
   overflow: hidden;
 }
 
@@ -250,6 +258,8 @@
     .circle__menu {
       overflow: hidden;
       height: auto;
+      border-width: 1px;
+
     }
 
     .circle__item {
@@ -362,9 +372,10 @@
   color: $orange;
 }
 
-
-
-
+.header__btn-menu,
+.menu__btn {
+  display: none;
+}
 
 // end header
 // start search
@@ -1422,3 +1433,9 @@
 
 
 // End product-page 
+
+
+
+
+
+@import 'media';
