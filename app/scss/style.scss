@@ -1649,13 +1649,159 @@
 
           li {
             max-width: 270px;
-
+            width: 100%;
           }
         }
       }
     }
+  }
+}
 
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
 
+.price__product {
+  font-size: 22px;
+  @include f500;
+  color: $red;
+
+}
+
+.product__price {
+  button {
+    margin-bottom: 7px;
+    border: none;
+    background-color: $text;
+    color: #fff;
+    font-size: 16px;
+    @include f700;
+    text-align: center;
+    display: block;
+    padding: 17px 5px 15px;
+    width: 100%;
+    cursor: pointer;
+    filter: drop-shadow(0px 1px 1px rgba(69, 90, 100, 0.75));
+
+    &::before {
+      font-family: 'FontAwesome';
+      font-weight: 400;
+      padding-right: 8px;
+    }
+  }
+
+  .fa-heart-o {
+    background-color: $green;
+  }
+
+  .fa-shopping-cart {
+    background-color: #42a5f5;
+  }
+}
+
+.product-author__box {
+  padding: 25px 0;
+  display: flex;
+}
+
+.author__avatar {
+  margin-right: 14px;
+}
+
+.author__name {
+  font-size: 18px;
+  color: $bg;
+  margin-bottom: 2px;
+
+}
+
+.author__info-link {
+  font-size: 13px;
+  color: #707070;
+  padding: 6px 5px 6px;
+  border: 1px solid #d6d6d6;
+}
+
+.author__awards-list {
+  .fa {
+    font-size: 20px;
+    color: #fff;
+    width: 34px;
+    height: 37px;
+  }
+
+  li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      right: 0;
+    }
+
+    &+li {
+      margin-left: 4px;
+    }
+  }
+}
+
+.fa-meh-o {
+  background-image: url(../images/awards/yellow.png);
+}
+
+.fa-pagelines {
+  background-image: url(../images/awards/orange.png);
+}
+
+.fa-bolt {
+  background-image: url(../images/awards/blue.png);
+}
+
+.fa-foursquare {
+  background-image: url(../images/awards/green.png);
+}
+
+.fa-yen {
+  background-image: url(../images/awards/grey.png);
+}
+
+.aside__item-sales {
+  padding-top: 23px;
+  font-size: 16px;
+  @include f300;
+  color: #707070;
+
+  span {
+    padding-right: 13px;
+    font-size: 20px;
+    @include f700;
+    color: #263238;
+  }
+
+  .fa-shopping-cart {
+    color: #a6b5bb;
+    padding-right: 20px;
+  }
+}
+
+.aside__item.sales-number {
+  padding-bottom: 25px;
+}
+
+.information__line {
+  font-size: 14px;
+  color: #70838d;
+  margin-top: 20px;
+  line-height: 18px;
+
+  span {
+    color: $bg;
+    @include f500;
   }
 }
 
