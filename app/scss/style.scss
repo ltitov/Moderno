@@ -562,12 +562,52 @@
     border: 1px solid #fff;
     border-radius: 4px;
     margin-bottom: 100px;
-
   }
-
 }
 
 //  End Page 404
+
+//  Start Page About
+
+.about {
+  &__wrapper {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 150px;
+  }
+
+  &__header {
+    font-size: 24px;
+    color: #444;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  &__inner {
+    padding: 0 50px;
+  }
+
+  &__box {
+
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      @include f700;
+      color: #444;
+
+    }
+
+    p {
+      margin-bottom: 40px;
+      color: #707070;
+    }
+  }
+}
+
+// End Page About
+
 
 // start search
 
