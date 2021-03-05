@@ -497,6 +497,78 @@
 
 // End Modal Login
 
+
+
+// Start Page 404
+.page-404 {
+  &__wrapper {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 150px;
+  }
+
+  &__header {
+    font-size: 24px;
+    color: #444;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  &__inner {
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+  }
+
+  &__heading {
+    padding: 70px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300px;
+    line-height: 300px;
+    font-weight: 800;
+    color: #fff;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 292px;
+      background-image: url(../images/page-404.png);
+      margin-left: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    @include f300;
+  }
+
+  &__text {
+    max-width: 510px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    padding: 20px 30px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+
+  }
+
+}
+
+//  End Page 404
+
 // start search
 
 .search {
