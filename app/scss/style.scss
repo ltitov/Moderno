@@ -2328,6 +2328,195 @@
   }
 }
 
+.profile {
+  &__inner {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__aside {
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+
+    &.footer__social-link {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__aside-btn {
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  &__aside-message {
+    padding: 18px 10px;
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    @include f500;
+    background-color: $text;
+    position: relative;
+
+    &:before {
+      content: "\f003";
+      position: absolute;
+      font-family: 'FontAwesome';
+      left: 50px;
+      top: 16px;
+    }
+  }
+
+  &__aside-following {
+    padding: 18px 10px;
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    @include f700;
+    background-color: $green;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+  }
+
+  &__banner {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 35px;
+  }
+
+  &__banner-images {
+    min-height: 332px;
+    background-image: url(../images/content/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__items {
+    display: flex;
+    border: 1px solid #dedede;
+  }
+
+  &__item {
+    padding: 20px 5px 17px;
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+
+    &+.profile__item {
+      border-left: 1px solid #dedede;
+    }
+  }
+
+  &__item-title {
+    font-size: 14px;
+    color: $bg;
+    @include f500;
+  }
+
+  &__item-content {
+    font-size: 14px;
+    color: #707070;
+    @include f500;
+
+    &.profile__item-sales {
+      color: $bg;
+    }
+  }
+}
+
+.profile-settings {
+  .settings__tabs.product-one__tab {
+    .tabs span {
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 500;
+      color: #707070;
+      position: relative;
+
+      &.active::before {
+        color: $green;
+
+      }
+
+      &::before {
+        position: absolute;
+        left: 27px;
+        top: 16px;
+        font-size: 14px;
+        font-family: 'FontAwesome';
+        color: #d0d0d0;
+      }
+    }
+  }
+
+}
+
+.personal-box {
+  padding: 35px 40px 25px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 25px;
+    @include f700;
+    color: $bg;
+    font-size: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    p {
+      color: #707070;
+    }
+  }
+
+  &__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__item-name {
+    @include f500;
+    font-size: 16px;
+    color: $bg;
+    font-style: italic;
+  }
+
+  &__item-number {
+    @include f700;
+    font-size: 16px;
+    color: $bg;
+  }
+
+  &__item-line {
+    margin-bottom: 23px;
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+
+    span {
+      display: block;
+      border-radius: 3px;
+      height: 15px;
+      background-image: url(../images/Line.jpg);
+      background-repeat: repeat;
+
+    }
+
+  }
+}
+
 // End Profile page
 
 
