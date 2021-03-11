@@ -89,8 +89,6 @@
     }
   }
 
-
-
   .menu__btn {
     display: block;
     width: 30px;
@@ -105,6 +103,38 @@
       }
     }
   }
+
+  .upload {
+    .upload-line {
+      display: block;
+
+      label {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+    }
+
+    &__inner-title {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    &__inner-content {
+      padding: 0 10px 0 10px;
+      margin-bottom: 0;
+    }
+
+    &__inner-content {
+      padding: 16px 10px 5px;
+    }
+
+    button {
+      margin-left: 0;
+    }
+  }
+
+
 }
 
 @media (max-width: 640px) {
