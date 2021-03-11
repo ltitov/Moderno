@@ -22,6 +22,10 @@
   .header__text {
     display: none;
   }
+
+  .page-404__heading {
+    font-size: 275px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -37,6 +41,18 @@
   .footer__col-menu {
     &+& {
       margin-left: 50px;
+    }
+  }
+
+  .page-404__heading {
+    font-size: 235px;
+
+    &::after {
+      width: 51px;
+      height: 100px;
+      background-size: cover;
+      left: 50%;
+      bottom: 0;
     }
   }
 }
@@ -100,7 +116,25 @@
 
   .circle__menu {
     right: auto;
+  }
 
+  .page-404 {
+    &__heading {
+      font-size: 135px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      padding: 0px 15px;
+      font-size: 14px;
+    }
+
+    &__link {
+      padding: 8px 10px 8px;
+    }
   }
 }
 
