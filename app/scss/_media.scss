@@ -8,7 +8,6 @@
   }
 }
 
-
 @media (max-width: 1150px) {
   .footer__inner {
     flex-wrap: wrap;
@@ -25,6 +24,20 @@
 
   .page-404__heading {
     font-size: 275px;
+  }
+
+  .jq-selectbox__select {
+    max-width: 540px;
+  }
+
+
+  .settings__tabs.product-one__tab {
+    display: block;
+
+    .tabs {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
   }
 }
 
@@ -164,6 +177,32 @@
 
     &__link {
       padding: 8px 10px 8px;
+    }
+  }
+
+  .settings__line {
+    display: block;
+
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .page-box {
+    button {
+      margin: 0;
+    }
+  }
+
+  .page-box {
+    &__content {
+      padding: 20px 10px 50px;
+    }
+
+    &__title {
+      border-bottom: 1px solid #dedede;
+      padding: 18px 10px;
     }
   }
 }
