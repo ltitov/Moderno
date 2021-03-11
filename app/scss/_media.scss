@@ -1,3 +1,14 @@
+@media (max-width: 1200px) {
+  .withdrawals {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
+
+
 @media (max-width: 1150px) {
   .footer__inner {
     flex-wrap: wrap;
@@ -106,6 +117,22 @@
       margin-top: 30px;
     }
   }
+
+  .withdrawals {
+    &__content {
+      padding: 0px 10px 0px 10px;
+    }
+
+    &__content-items {
+      overflow-x: scroll;
+    }
+
+    &__content-item {
+      min-width: 490px;
+    }
+  }
+
+
 }
 
 @media (max-width: 520px) {
