@@ -6,6 +6,15 @@
       gap: 50px;
     }
   }
+
+  .contact__form-row {
+    display: block;
+
+    input {
+      width: 100%;
+    }
+  }
+
 }
 
 @media (max-width: 1150px) {
@@ -66,6 +75,23 @@
       background-size: cover;
       left: 50%;
       bottom: 0;
+    }
+  }
+
+  .contact {
+    &__inner {
+      padding: 35px 10px 15px;
+    }
+
+    &__header {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__map {
+      iframe {
+        height: 300px;
+      }
     }
   }
 }
@@ -204,6 +230,10 @@
       border-bottom: 1px solid #dedede;
       padding: 18px 10px;
     }
+  }
+
+  .contact__box {
+    display: block;
   }
 }
 
