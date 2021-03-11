@@ -1372,7 +1372,6 @@
     font-family: 'FontAwesome';
     color: $green;
     font-size: 18px;
-
   }
 }
 
@@ -1396,7 +1395,6 @@
       left: 0;
       font-size: 18px;
       font-family: 'FontAwesome';
-
     }
   }
 }
@@ -2556,10 +2554,6 @@
       span {
         color: $green;
       }
-
-      &::placeholder {
-        color: #707070;
-      }
     }
 
     select,
@@ -2571,6 +2565,10 @@
       padding: 0px 18px;
       border: 1px solid #d7d7d7;
       background-color: #f9f9f9;
+
+      &::placeholder {
+        color: #707070;
+      }
     }
 
     textarea {
@@ -2708,6 +2706,159 @@
 }
 
 // End Upload
+
+// Start withdrawals
+
+.withdrawals {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+  }
+
+  &__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    height: 100%;
+  }
+
+  &__title {
+    padding: 18px 32px 24px;
+    margin-bottom: 30px;
+    @include f500;
+    font-size: 24px;
+    border-bottom: 1px solid #d7d7d7;
+    color: $bg;
+  }
+
+  &__content {
+    padding: 0px 35px 0px 40px;
+
+    button {
+      margin-bottom: 50px;
+      color: #fff;
+      background-color: $green;
+      border: none;
+      padding: 15px 36px;
+      cursor: pointer;
+    }
+  }
+
+  &__form-line {
+    margin-bottom: 25px;
+
+    label {
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      @include f500;
+      margin-bottom: 15px;
+      color: $bg;
+
+      span {
+        color: $green;
+      }
+    }
+
+    input,
+    select {
+      display: block;
+      width: 100%;
+      min-height: 40px;
+      padding: 0px 18px;
+      border: 1px solid #d7d7d7;
+      background-color: #f9f9f9;
+
+      &::placeholder {
+        color: #707070;
+      }
+
+    }
+
+    .jq-selectbox {
+      width: 100%;
+    }
+
+    .jq-selectbox__select {
+      height: 40px;
+      padding: 0px 18px;
+      border: 1px solid #d7d7d7;
+      border-bottom-color: #d7d7d7;
+      border-radius: 0px;
+      background: #f9f9f9;
+      box-shadow: none;
+      font-family: 'Roboto-Regular', sans-serif;
+      line-height: 40px;
+      color: #707070;
+      text-shadow: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+      border: none;
+      top: 0;
+      right: 20px;
+      font-size: 15px;
+      line-height: 40px;
+
+      &::before {
+        content: '\f0d7';
+        font-family: "FontAwesome";
+      }
+    }
+
+    .jq-selectbox__trigger {
+      border-left: none;
+    }
+  }
+
+  &__content-items {
+    padding-bottom: 35px;
+  }
+
+  &__content-item {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    font-size: 13px;
+    color: #444;
+
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+  }
+
+  &__content-date {
+    width: 154px;
+    padding-left: 20px;
+    @include f500;
+  }
+
+  &__content-mail {
+    width: 180px;
+    @include f500;
+  }
+
+  &__content-price {
+    width: 70px;
+    @include f700;
+  }
+
+  &__content-status {
+    width: 88px;
+    @include f700;
+
+    &.withdrawals__content-paid {
+      color: $green;
+    }
+  }
+
+}
+
+
+// End withdrawals
+
 
 
 
