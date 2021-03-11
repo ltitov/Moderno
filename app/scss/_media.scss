@@ -252,6 +252,16 @@
   .user__menu {
     top: 53px;
   }
+
+  .about {
+    &__header {
+      padding: 23px 15px;
+    }
+
+    &__inner {
+      padding: 0px 15px;
+    }
+  }
 }
 
 
