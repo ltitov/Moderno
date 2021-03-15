@@ -1990,7 +1990,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px;
   }
 
   &__images {
@@ -1998,7 +1998,7 @@
     width: 100%;
     min-height: 422px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
 
