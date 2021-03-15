@@ -1810,9 +1810,10 @@
 
 .product-page__content {
   .product__item {
-    max-width: 270px;
+    flex-basis: calc(33.33333% - 30px);
     background-color: #fff;
     transition: all 0.5s;
+    margin-left: 30px;
   }
 
   .product__item-img {
@@ -1843,9 +1844,10 @@
 
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 
 .pagination {
@@ -1925,6 +1927,7 @@
 .product__item {
   &.list {
     max-width: 100%;
+    flex-basis: 100%;
 
     .product__item-img {
       width: 240px;
